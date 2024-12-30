@@ -15,7 +15,6 @@ import { useIsAuthenticated } from './components/login/auth';
 import ForgetPassword from './components/login/ForgetPassword';
 import OtpGenerate from "./components/login/OtpGenerate"
 import OtpVerify from "./components/login/OtpVerify"
-import { Check } from './components/Check';
 
 function App() {
   const [mainCurrentPath, setMainCurrentPath] = useState('');
@@ -33,7 +32,6 @@ function App() {
         <Route path="/forgetpassword" element={<ForgetPassword />} />
         <Route path="/otpverify" element={<OtpVerify />} />
         <Route path="/otpgenerate" element={<OtpGenerate />} />
-        <Route path="/check" element={<Check />} />
 
         <Route
           path="/dashboard"
